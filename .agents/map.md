@@ -20,7 +20,7 @@ Hero (#hero)
 - Logo animado + efecto glow
 - Título: "Control total para tu negocio"
 - Stats: 9+ módulos, $0, sin límites
-- Version card: muestra title y message desde `version.json` (fetch JS + fallback embebido para file://, donde CORS bloquea fetch)
+- Version card: muestra title y message desde `version.json` (fetch JS + fallback embebido para file://, donde CORS bloquea fetch). Fallback debe sincronizarse manualmente con version.json al actualizar versión
 - CTAs: Descargar, Ver características
 
 ### Features (6 cards)
