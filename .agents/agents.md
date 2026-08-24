@@ -14,6 +14,7 @@ Landing page estática para promocionar PoopPOS, un sistema POS de escritorio.
 ```
 /
 ├── index.html          # Landing page (único archivo)
+├── terminos.html       # Página Términos de Uso
 ├── style.css           # Vacío (placeholder)
 ├── icon.svg            # Favicon 1080x1080
 ├── version.json        # Versión app desktop

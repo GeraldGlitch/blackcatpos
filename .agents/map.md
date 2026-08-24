@@ -12,6 +12,8 @@ Hero (#hero)
   ├── Tutorial (#tutorial)
   ├── Capturas (#screenshots)
   └── Descarga (#download)
+
+Footer → terminos.html (Términos de Uso)
 ```
 
 ## Secciones
@@ -50,6 +52,12 @@ Video YouTube embebido
 
 ### Download
 CTA final → redirección a itch.io
+
+### Términos de Uso (`terminos.html`)
+- Página estática separada, mismo tema oscuro/paleta naranja
+- Navbar mínima: logo + "Volver al inicio"
+- 12 secciones: aceptación, descripción (gratis + DB local), licencia, garantías as-is, limitación responsabilidad, servicios pago opcionales, responsabilidad usuario (fiscal DGI + regulaciones negocio), datos personales, propiedad intelectual, modificaciones, ley aplicable (Nicaragua), contacto (email geraldglitch@gmail.com + itch.io)
+- Fecha última actualización: Agosto 2026
 
 ## Componentes UI
 - Navbar fixed con glass-morphism
