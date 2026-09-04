@@ -13,7 +13,7 @@ Hero (#hero)
   ├── Capturas (#screenshots)
   └── Descarga (#download)
 
-Footer → terminos.html (Términos de Uso)
+Footer → terminos.html (Términos de Uso) + privacidad.html (Política de Privacidad)
 ```
 
 ## Secciones
@@ -58,6 +58,12 @@ CTA final → redirección a itch.io
 - Navbar mínima: logo + "Volver al inicio"
 - 12 secciones: aceptación, descripción (gratis + DB local), licencia, garantías as-is, limitación responsabilidad, servicios pago opcionales, responsabilidad usuario (fiscal DGI + regulaciones negocio), datos personales, propiedad intelectual, modificaciones, ley aplicable (Nicaragua), contacto (email geraldglitch@gmail.com + itch.io)
 - Fecha última actualización: Agosto 2026
+
+### Política de Privacidad (`privacidad.html`)
+- Página estática separada, mismo tema oscuro/paleta naranja
+- Navbar mínima: logo + "Volver al inicio"
+- 13 secciones: resumen (DB 100% local, sin servidores propios), qué datos recopila (solo los que el usuario registra + contacto al contratar servicios), cómo usa los datos, datos de Google (scope único `gmail.send`, no lee bandeja/contactos), Gmail para enviar reportes (manual + automáticos), almacenamiento local (SQLite, imágenes, exports, backups zip), Google Drive NO se usa para backups (solo local, cloud futura con consentimiento), tokens OAuth (refresh ofuscado XOR+base64 en DB local, access token efímero), no vende datos, desconectar Google (botón en Configuración → Google Services + revocación en Cuenta Google), eliminación de datos (borrado individual, reset seguro, desinstalación + correo para datos de contacto de servicios), cambios a la política, ley aplicable (Nicaragua) + contacto
+- Fecha última actualización: Septiembre 2026
 
 ## Componentes UI
 - Navbar fixed con glass-morphism

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — PoopPOS</title>
+  <meta name="description"
+    content="Política de Privacidad de PoopPOS, sistema de punto de venta gratuito con base de datos local. Qué datos recopila, cómo los usa, integración con Google (Gmail), almacenamiento de tokens OAuth y cómo solicitar eliminación de datos.">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            poop: {
+              50: '#fef7ed',
+              100: '#fdecd4',
+              200: '#fad5a8',
+              300: '#f6b871',
+              400: '#f19338',
+              500: '#ee7b15',
+              600: '#df610b',
+              700: '#b9490c',
+              800: '#933a12',
+              900: '#773112',
+            },
+            dark: {
+              50: '#f6f6f6',
+              100: '#e7e7e7',
+              200: '#d1d1d1',
+              300: '#b0b0b0',
+              400: '#888888',
+              500: '#6d6d6d',
+              600: '#5d5d5d',
+              700: '#4f4f4f',
+              800: '#383838',
+              900: '#2a2a2a',
+              950: '#1a1a1a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #0f0f0f;
+      color: #e7e7e7;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #f19338, #ee7b15, #df610b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#0f0f0f]/80 backdrop-blur-md"
+    role="navigation" aria-label="Navegación principal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logos.png" alt="PoopPOS" class="w-8 h-8 rounded-lg">
+        <span class="text-sm font-semibold">Poop<span class="gradient-text">POS</span></span>
+      </a>
+      <a href="index.html"
+        class="text-sm text-dark-400 hover:text-white transition-colors">&larr; Volver al inicio</a>
+    </div>
+  </nav>
+
+  <!-- ==================== CONTENIDO ==================== -->
+  <main class="flex-1 pt-28 pb-16" role="main">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <header class="mb-10">
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">Política de <span class="gradient-text">Privacidad</span></h1>
+        <p class="text-dark-400 text-sm">Última actualización: Septiembre 2026</p>
+      </header>
+
+      <div class="space-y-10 text-[15px] leading-relaxed text-dark-300">
+
+        <!-- 1. Resumen -->
+        <section aria-labelledby="s-resumen">
+          <h2 id="s-resumen" class="text-lg font-bold text-white mb-3">1. Resumen</h2>
+          <p>PoopPOS es un sistema de punto de venta <strong class="text-white">100% gratuito</strong> diseñado para
+            que tus datos sean tuyos. Toda la información de tu negocio (ventas, inventario, clientes, empleados,
+            gastos, etc.) se almacena <strong class="text-white">únicamente en tu dispositivo</strong>, en una base de
+            datos local. No operamos servidores que recopilen, almacenen ni procesen los datos de tu negocio.</p>
+          <p class="mt-3">La única integración externa opcional es con tu cuenta de Google, y solo se activa si tú
+            decides conectarla. En esta política te explicamos de forma clara qué datos se recopilan, cómo se usan y
+            qué control tienes sobre ellos.</p>
+        </section>
+
+        <!-- 2. Qué datos recopila -->
+        <section aria-labelledby="s-recopila">
+          <h2 id="s-recopila" class="text-lg font-bold text-white mb-3">2. Qué datos recopila PoopPOS</h2>
+          <p>PoopPOS no recopila ni envía datos a ningún servidor propio. No tenemos acceso a la información que
+            registras en el sistema.</p>
+          <p class="mt-3">Los datos que <strong class="text-white">tú</strong> registras manualmente en el software se
+            guardan en tu dispositivo e incluyen, según el uso que le des:</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li>Datos del negocio: nombre, RIF, dirección, teléfono, logo.</li>
+            <li>Ventas, gastos, cortes de día, cuentas y métodos de pago.</li>
+            <li>Inventario, productos, categorías, lotes y precios.</li>
+            <li>Clientes y empleados (nombre, identificación, teléfono, correo, PIN, horarios).</li>
+            <li>Configuración del sistema (impuestos, monedas, permisos, preferencias).</li>
+          </ul>
+          <p class="mt-3">Los únicos datos que podemos recibir directamente de ti son los de contacto que nos
+            proporcionas voluntariamente al contratar un servicio opcional (implementación, capacitación o carga de
+            datos), y se usan únicamente para prestar ese servicio.</p>
+        </section>
+
+        <!-- 3. Cómo utiliza los datos -->
+        <section aria-labelledby="s-uso">
+          <h2 id="s-uso" class="text-lg font-bold text-white mb-3">3. Cómo utiliza PoopPOS los datos</h2>
+          <p>Los datos que ingresas se utilizan exclusivamente para el funcionamiento del software en tu propio
+            dispositivo:</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li>Registrar y consultar ventas, gastos, inventario y clientes.</li>
+            <li>Generar reportes, cortes de día y exportaciones a Excel.</li>
+            <li>Validar accesos (PIN de empleados) y sesiones de la web interna (LAN).</li>
+            <li>Producir recibos y documentación fiscal de tu negocio.</li>
+          </ul>
+          <p class="mt-3">Ninguno de estos datos sale de tu dispositivo a menos que <strong class="text-white">tú</strong>
+            lo dispongas, por ejemplo al exportar un archivo o al enviar un reporte por correo (ver sección 5).</p>
+        </section>
+
+        <!-- 4. Qué datos de Google utiliza -->
+        <section aria-labelledby="s-google">
+          <h2 id="s-google" class="text-lg font-bold text-white mb-3">4. Qué datos de Google utiliza PoopPOS</h2>
+          <p>La integración con Google es <strong class="text-white">100% opcional</strong> y se activa únicamente si
+            eliges conectar tu cuenta en <em>Configuración → Google Services</em>. PoopPOS solicita un único
+            permiso de Google: <strong class="text-white">gmail.send</strong>, que autoriza a la aplicación a enviar
+            correos <em>desde tu propia cuenta</em>.</p>
+          <p class="mt-3">Con ese permiso, PoopPOS <strong class="text-white">no</strong> puede leer tu bandeja de
+            entrada, ni tus contactos, ni tus correos existentes: solo puede <strong class="text-white">enviar</strong>
+            correos nuevos. No se accede a Drive, Calendar, Fotos ni a ningún otro servicio de Google.</p>
+          <p class="mt-3">Al conectar la cuenta, PoopPOS intenta mostrar la dirección de correo conectada como
+            referencia. Como el permiso <code class="text-dark-200 bg-dark-900 px-1.5 py-0.5 rounded text-[13px]">gmail.send</code>
+            no permite leer el perfil, en algunos casos no es posible obtener el correo y la aplicación solo muestra el
+            estado de conexión.</p>
+        </section>
+
+        <!-- 5. Uso de Gmail para reportes -->
+        <section aria-labelledby="s-gmail">
+          <h2 id="s-gmail" class="text-lg font-bold text-white mb-3">5. Gmail se utiliza para enviar reportes</h2>
+          <p>La cuenta de Google conectada se usa únicamente para <strong class="text-white">enviar reportes</strong>
+            generados dentro de PoopPOS, en dos situaciones:</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li><strong class="text-white">Envío manual:</strong> desde el detalle de un corte (Reportes → Exportar →
+              Enviar por Email), eliges el destinatario y PoopPOS envía el archivo Excel del corte adjunto.</li>
+            <li><strong class="text-white">Reportes automáticos:</strong> si activas la opción en
+              <em>Configuración → Google Services → Reportes automáticos</em>, al terminar el día se envía
+              automáticamente el reporte del corte a los destinatarios que hayas configurado (empleados con correo
+              registrado y/o correos adicionales que tú agregues).</li>
+          </ul>
+          <p class="mt-3">Los correos se envían <strong class="text-white">desde tu propia cuenta</strong> de Gmail y
+            solo a los destinatarios que tú indiques. PoopPOS no envía correos a terceros ni a nosotros.</p>
+        </section>
+
+        <!-- 6. Qué datos almacena localmente -->
+        <section aria-labelledby="s-local">
+          <h2 id="s-local" class="text-lg font-bold text-white mb-3">6. Qué datos almacena PoopPOS localmente</h2>
+          <p>Todo se guarda en la carpeta de datos de la aplicación en tu dispositivo (<code class="text-dark-200 bg-dark-900 px-1.5 py-0.5 rounded text-[13px]">user://</code>):</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li><strong class="text-white">Base de datos SQLite</strong> con toda la información de tu negocio
+              (ventas, inventario, clientes, empleados, gastos, configuración).</li>
+            <li><strong class="text-white">Imágenes</strong> de productos y el logo del negocio (archivos, no dentro
+              de la base de datos).</li>
+            <li><strong class="text-white">Archivos exportados</strong> (Excel de cortes) en la carpeta de
+              exportaciones.</li>
+            <li><strong class="text-white">Copias de seguridad</strong> (backups) en archivo <code class="text-dark-200 bg-dark-900 px-1.5 py-0.5 rounded text-[13px]">.zip</code> cuando
+              tú las generas desde <em>Configuración → Backup/Restore</em>.</li>
+            <li><strong class="text-white">Datos de conexión de Google</strong> (tokens OAuth ofuscados) — ver
+              sección 8.</li>
+          </ul>
+        </section>
+
+        <!-- 7. Backups y Google Drive -->
+        <section aria-labelledby="s-drive">
+          <h2 id="s-drive" class="text-lg font-bold text-white mb-3">7. ¿PoopPOS utiliza Google Drive para backups?</h2>
+          <p><strong class="text-white">No.</strong> Actualmente PoopPOS no sube ni guarda nada en Google Drive ni en
+            ningún servicio en la nube. Las copias de seguridad se generan <strong class="text-white">localmente</strong>
+            en tu dispositivo, como un archivo comprimido que contiene tu base de datos, imágenes de productos y logo
+            del negocio, y que tú decides dónde guardar o respaldar (por ejemplo, en un USB, disco externo o en tu
+            propio Drive si así lo deseas).</p>
+          <p class="mt-3">La sincronización con la nube podría estar disponible en una versión futura, pero nunca se
+            activará sin tu consentimiento explícito y esta política se actualizaría en ese momento.</p>
+        </section>
+
+        <!-- 8. Almacenamiento de tokens OAuth -->
+        <section aria-labelledby="s-tokens">
+          <h2 id="s-tokens" class="text-lg font-bold text-white mb-3">8. Cómo se almacenan los tokens OAuth</h2>
+          <p>Cuando conectas tu cuenta de Google, el proceso de autorización (OAuth2) ocurre directamente entre
+            PoopPOS y Google en tu propio equipo. El <strong class="text-white">refresh token</strong> (el permiso de
+            larga duración) se guarda en tu base de datos local <strong class="text-white">ofuscado</strong>
+            (XOR + base64), no en texto plano. El <strong class="text-white">access token</strong> es una caché
+            efímera que se usa para enviar correos y se renueva automáticamente cuando expira.</p>
+          <p class="mt-3">Estos tokens nunca se envían a servidores de PoopPOS y nunca se comparten con terceros.
+            Cualquier persona con acceso físico a tu dispositivo y a tu base de datos podría intentar extraerlos,
+            por lo que recomendamos proteger tu equipo con contraseña.</p>
+        </section>
+
+        <!-- 9. No vendemos datos -->
+        <section aria-labelledby="s-venta">
+          <h2 id="s-venta" class="text-lg font-bold text-white mb-3">9. PoopPOS no vende tus datos</h2>
+          <p>PoopPOS <strong class="text-white">no vende, alquila, cede ni comparte</strong> tus datos con terceros,
+            bajo ninguna circunstancia. No tenemos publicidad, no rastreamos tu uso y no monetizamos información
+            personal. Tu información es solo tuya.</p>
+          <p class="mt-3">Tampoco utilizamos tus datos de contacto para enviarte publicidad, salvo que tú inicies
+            una comunicación directa con nosotros para contratar un servicio.</p>
+        </section>
+
+        <!-- 10. Desconectar Google -->
+        <section aria-labelledby="s-desconectar">
+          <h2 id="s-desconectar" class="text-lg font-bold text-white mb-3">10. Cómo desconectar tu cuenta de Google</h2>
+          <p>Puedes revocar el acceso de PoopPOS a tu cuenta de Google en cualquier momento, de dos formas:</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li><strong class="text-white">Desde la aplicación:</strong> en <em>Configuración → Google Services</em>,
+              presiona el botón <strong class="text-white">"Desconectar"</strong>. PoopPOS elimina de tu base de datos
+              local todos los datos de la conexión (tokens y cuenta conectada).</li>
+            <li><strong class="text-white">Desde Google:</strong> entra a la página de
+              <em>Cuenta de Google → Seguridad → Apps de terceros con acceso a tu cuenta</em> y revoca el acceso de
+              PoopPOS. Esto invalida los tokens en el lado de Google.</li>
+          </ul>
+          <p class="mt-3">Al desconectar, PoopPOS conserva todos tus datos locales del negocio; solo se pierde la
+            capacidad de enviar reportes por Gmail hasta que reconectes tu cuenta.</p>
+        </section>
+
+        <!-- 11. Eliminación de datos -->
+        <section aria-labelledby="s-eliminacion">
+          <h2 id="s-eliminacion" class="text-lg font-bold text-white mb-3">11. Cómo solicitar la eliminación de tus datos</h2>
+          <p>Como tus datos viven en tu dispositivo, <strong class="text-white">tú tienes el control total</strong>
+            para eliminarlos en cualquier momento:</p>
+          <ul class="list-disc list-outside ml-5 mt-3 space-y-2">
+            <li><strong class="text-white">Borrar datos individuales</strong> (ventas, clientes, productos, etc.)
+              directamente desde las secciones correspondientes de la aplicación.</li>
+            <li><strong class="text-white">Restablecer el sistema</strong> mediante el proceso de reset seguro de
+              <em>Configuración</em>, que elimina toda la base de datos local.</li>
+            <li><strong class="text-white">Desinstalar la aplicación</strong> y borrar su carpeta de datos en tu
+              dispositivo, lo que elimina la base de datos, las imágenes y los tokens de Google.</li>
+          </ul>
+          <p class="mt-3">Si nos contrataste un servicio opcional y deseas que eliminemos los datos de contacto y
+            documentación que nos hayas compartido, escríbenos a
+            <a href="mailto:geraldglitch@gmail.com"
+              class="text-poop-400 hover:text-poop-300 transition-colors font-medium">geraldglitch@gmail.com</a>
+            y lo haremos en un plazo máximo de 30 días.</p>
+        </section>
+
+        <!-- 12. Cambios a esta política -->
+        <section aria-labelledby="s-cambios">
+          <h2 id="s-cambios" class="text-lg font-bold text-white mb-3">12. Cambios a esta política</h2>
+          <p>Podemos actualizar esta política de privacidad en el futuro, por ejemplo si se agregan nuevas
+            integraciones. Los cambios se publicarán en esta página con una nueva fecha de actualización. Si los
+            cambios son relevantes (como la adición de un servicio en la nube), te lo notificaremos dentro de la
+            aplicación antes de que surtan efecto.</p>
+        </section>
+
+        <!-- 13. Ley aplicable y contacto -->
+        <section aria-labelledby="s-contacto">
+          <h2 id="s-contacto" class="text-lg font-bold text-white mb-3">13. Ley aplicable y contacto</h2>
+          <p>Esta política se rige por las leyes de la República de Nicaragua. Si tienes preguntas sobre tu privacidad
+            o el manejo de tus datos, escríbenos a
+            <a href="mailto:geraldglitch@gmail.com"
+              class="text-poop-400 hover:text-poop-300 transition-colors font-medium">geraldglitch@gmail.com</a>
+            o visita la página oficial del proyecto:
+            <a href="https://geraldglitch.itch.io/pooppos" target="_blank" rel="noopener noreferrer"
+              class="text-poop-400 hover:text-poop-300 transition-colors font-medium">geraldglitch.itch.io/pooppos</a>.
+          </p>
+        </section>
+
+      </div>
+
+      <footer class="mt-14 pt-8 border-t border-white/5">
+        <p class="text-xs text-dark-500">Última actualización: Septiembre 2026</p>
+      </footer>
+
+    </article>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/5 py-12" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="images/logos.png" alt="PoopPOS" class="w-8 h-8 rounded-lg">
+          <span class="text-sm font-semibold">Poop<span class="gradient-text">POS</span></span>
+        </div>
+        <p class="text-xs text-dark-500">
+          &copy; 2026 PoopPOS by GeraldGlitch Todos los derechos reservados.
+        </p>
+        <div class="flex items-center gap-6">
+          <a href="index.html" class="text-xs text-dark-400 hover:text-white transition-colors">Inicio</a>
+          <a href="terminos.html" class="text-xs text-dark-400 hover:text-white transition-colors">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
