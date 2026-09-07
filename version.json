@@ -1,5 +1,5 @@
 {
-  "version": 10,
-  "title": "Nueva Actualización disponible - v 1.0.7",
-  "message": "EPIC UPDATE - Proud to deliver version (1.0.7) \n\n-Ahora puedes utilizar multiples dispositivos: Config > WebServer\n-Implementación OrderFlow para restaurantes, habilitalo en 'Config -> OrderFlow'"
+  "version": 11,
+  "title": "Nueva Actualización disponible - v 1.0.8",
+  "message": "UPDATE - Proud to deliver version (1.0.8) \n\n-Bugs de impresión corregidos ESC/POS \n-Mejora en aplicación y configuración de impuestos y recargos \n-Shift clock para marcar entrada y salida por empleados\nReportes automáticos por email"
 }
