@@ -1,4 +1,4 @@
-# PoopPOS - Base de Datos (App Desktop)
+# BlackCatPOS - Base de Datos (App Desktop)
 
 ## Nota
 Este repo NO contiene la app desktop. `db.md` documenta lo que la landing page referencia sobre la DB del sistema POS.

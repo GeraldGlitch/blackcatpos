@@ -1,4 +1,4 @@
-# PoopPOS Web - Mapa de Pantallas
+# BlackCatPOS Web - Mapa de Pantallas
 
 ## Tipo
 Single page scrollable (landing page)
@@ -69,5 +69,5 @@ CTA final → redirección a itch.io
 - Navbar fixed con glass-morphism
 - Menú hamburguesa (mobile)
 - Dark theme (#0f0f0f background)
-- Paleta naranja personalizada (poop)
+- Paleta naranja personalizada de BlackCatPOS
 - Fade-in animations (Intersection Observer)

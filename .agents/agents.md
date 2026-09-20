@@ -1,7 +1,7 @@
-# PoopPOS Web - Landing Page
+# BlackCatPOS Web - Landing Page
 
 ## Descripción
-Landing page estática para promocionar PoopPOS, un sistema POS de escritorio.
+Landing page estática para promocionar BlackCatPOS, un sistema POS de escritorio.
 
 ## Tech Stack
 - **HTML5** - Single page
