@@ -6,6 +6,7 @@ Single page scrollable (landing page)
 ## Flujo de navegación
 ```
 Hero (#hero)
+  ├── Rebranding (#rebranding)
   ├── Características (#features)
   ├── Módulos (#modules)
   ├── Servicios (#services)
@@ -25,6 +26,12 @@ Footer → terminos.html (Términos de Uso) + privacidad.html (Política de Priv
 - Version card: muestra title y message desde `version.json` (fetch JS + fallback embebido para file://, donde CORS bloquea fetch). Fallback debe sincronizarse manualmente con version.json al actualizar versión
 - Enlace al devlog (itch.io) debajo del mensaje de versión
 - CTAs: Descargar, Ver características
+
+### Rebranding (`#rebranding`)
+- Banner `images/rebranding.png` (1612x618, claro) en tarjeta crema `bg-[#fdf3e3]` con borde naranja
+- Anuncia cambio de nombre PoopPOS → BlackCatPOS para v1.0.9: mismas funciones, nueva identidad
+- Título con "PoopPOS" tachado (`line-through`) + "BlackCatPOS" en gradient-text
+- CTA "Descargar v1.0.9" → itch.io
 
 ### Features (6 cards)
 1. **100% Gratis** - Sin cargos ocultos

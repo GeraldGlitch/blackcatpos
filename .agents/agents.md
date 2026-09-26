@@ -15,6 +15,7 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 /
 ├── index.html          # Landing page (único archivo)
 ├── terminos.html       # Página Términos de Uso
+├── privacidad.html     # Página Política de Privacidad
 ├── style.css           # Vacío (placeholder)
 ├── icon.svg            # Favicon 1080x1080
 ├── version.json        # Versión app desktop
@@ -22,7 +23,9 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 ├── images/
 │   ├── login.png
 │   ├── logos.png
-│   └── main-dashboard.png
+│   ├── main-dashboard.png
+│   ├── rebranding.png       # Banner PoopPOS → BlackCatPOS (v1.0.9)
+│   └── icon*.png            # Iconos de los 9 módulos
 └── .agents/
     ├── gg.md           # Reglas dev
     ├── agents.md       # Este archivo
