@@ -50,8 +50,9 @@ Ventas | Gastos | Inventario | Clientes | Proveedores | Empleados | Reportes | C
 3. **Importación en Lote** $10 - Migración datos Excel/CSV
 4. **Carga Manual Datos** $60 - Captura manual sin inventario digital
 
-### Tutorial
-Video YouTube embebido
+### Tutorial (`#tutorial`)
+- Video YouTube embebido (primeros pasos y setup inicial)
+- Video ID: `52_GPI-v_8w`
 
 ### Screenshots
 - Dashboard principal (`main-dashboard.png`)

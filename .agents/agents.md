@@ -35,7 +35,7 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 
 ## Enlaces externos
 - **Descarga app**: `https://geraldglitch.itch.io/pooppos`
-- **Tutorial YouTube**: `https://www.youtube.com/embed/DcoOU_vywM8`
+- **Tutorial YouTube**: `https://www.youtube.com/embed/52_GPI-v_8w` (primeros pasos y setup inicial)
 
 ## Notas
 - Sin build tools, sin package.json, sin backend
