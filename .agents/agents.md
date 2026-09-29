@@ -8,6 +8,7 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 - **Tailwind CSS** - CDN (`cdn.tailwindcss.com`)
 - **Google Fonts Inter** - CDN
 - **Vanilla JS** - Animaciones, menú mobile, scroll effects
+- **Idiomas** - Español/inglés en landing, selector Vanilla JS y preferencia en localStorage
 - **SVG** - Favicon/icon
 
 ## Estructura

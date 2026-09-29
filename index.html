@@ -260,7 +260,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center gap-8">
+        <div class="hidden md:flex items-center gap-5">
           <a href="#features"
             class="text-sm text-dark-300 hover:text-white transition-colors duration-200">Características</a>
           <a href="#modules" class="text-sm text-dark-300 hover:text-white transition-colors duration-200">Módulos</a>
@@ -268,19 +268,23 @@
           <a href="#tutorial" class="text-sm text-dark-300 hover:text-white transition-colors duration-200">Tutorial</a>
           <a href="#screenshots" class="text-sm text-dark-300 hover:text-white transition-colors duration-200">Vista
             Previa</a>
+          <button type="button" class="language-toggle text-sm text-dark-300 hover:text-white" aria-label="Change language">EN</button>
           <a href="https://geraldglitch.itch.io/pooppos" target="_blank" rel="noopener"
             class="cta-btn text-sm font-semibold text-white px-5 py-2 rounded-full">
             Descargar Gratis
           </a>
         </div>
 
-        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center gap-2">
+          <button type="button" class="language-toggle text-sm text-poop-300 px-2" aria-label="Change language">EN</button>
+          <!-- Mobile Menu Button -->
         <button class="md:hidden text-dark-300 hover:text-white p-2 rounded-lg transition-colors" id="mobile-menu-btn"
           aria-label="Abrir menú" aria-expanded="false">
           <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        </div>
       </div>
     </div>
 
@@ -870,6 +874,59 @@
   <!-- ==================== SCRIPTS ==================== -->
   <script>
     // Mobile menu toggle
+    const translations = {
+      'Características': 'Features', 'Módulos': 'Modules', 'Servicios': 'Services', 'Vista Previa': 'Preview',
+      'Descargar Gratis': 'Download for Free', 'Abrir menú': 'Open menu',
+      '100% Gratis · Base de datos local': '100% Free · Local database',
+      'Control total para': 'Take control of', 'tu negocio': 'your business',
+      'BlackCatPOS es el sistema todo en uno que necesitas para administrar ventas, gastos, inventario, clientes y más.': 'BlackCatPOS is the all-in-one system you need to manage sales, expenses, inventory, customers, and more.',
+      'Sin costos mensuales, sin internet obligatorio.': 'No monthly fees, no internet required.',
+      'Descargar Ahora': 'Download Now', 'Ver Características': 'Explore Features', 'Siempre gratis': 'Always free',
+      'Sin límites': 'No limits', 'Checa el devlog completo acá:': 'Read the full devlog here:', 'Ver devlog': 'View devlog',
+      'Antes': 'Previously', 'ahora': 'now',
+      'Mismo POS, mismas funciones, mismo propósito. Solo cambiamos la identidad: nueva mascota y nuevo nombre en la versión 1.0.9. Gracias a todos los que probaron PoopPOS y ayudaron a mejorarlo.': 'Same POS, features, and purpose. We only changed the identity: a new mascot and name in version 1.0.9. Thanks to everyone who tried PoopPOS and helped improve it.',
+      'Mismo software, nueva identidad.': 'Same software, new identity.', '¿Por qué BlackCatPOS?': 'Why BlackCatPOS?',
+      'Todo lo que necesitas,': 'Everything you need,', 'nada que no': 'nothing you don’t',
+      'Diseñado específicamente para pequeños negocios que buscan simplicidad y control sin complicaciones.': 'Designed for small businesses looking for simplicity and control without the hassle.',
+      '100% Gratuito': '100% Free', 'Sin costos escondidos, sin suscripciones mensuales. BlackCatPOS es y será siempre totalmente gratis.': 'No hidden fees or monthly subscriptions. BlackCatPOS is, and always will be, completely free.',
+      'Base de Datos Local': 'Local Database', 'Tu información se guarda en tu dispositivo. No necesitas internet ni servidores externos. Tus datos son tuyos.': 'Your information stays on your device. No internet or external servers required. Your data belongs to you.',
+      'Multi-Moneda': 'Multi-Currency', 'Configura las monedas que aceptas, define cuál es la principal y trabaja con tasas de cambio personalizadas.': 'Set the currencies you accept, choose a primary currency, and use custom exchange rates.',
+      'Ventas y Gastos Rápidos': 'Quick Sales & Expenses', 'Reportes Diarios': 'Daily Reports', 'Control de Acceso': 'Access Control',
+      'Un módulo para': 'A module for', 'cada necesidad': 'every need', 'Cada aspecto de tu negocio cubierto en una sola aplicación.': 'Every aspect of your business covered in one app.',
+      'Aprende a usarlo': 'Learn how to use it', 'Primeros pasos y': 'Getting started and', 'setup inicial': 'initial setup',
+      'Mira este video rápido para aprender a configurar tu negocio desde cero y empezar a registrar ventas en minutos.': 'Watch this quick video to set up your business from scratch and start recording sales in minutes.',
+      'Conoce la': 'Explore the', 'interfaz': 'interface',
+      'Una interfaz oscura, limpia y fácil de usar. Diseñada para que el trabajo sea rápido y sin distracciones.': 'A clean, easy-to-use dark interface, designed to help you work quickly without distractions.',
+      '¿Listo para tomar el': 'Ready to take', 'control': 'control?',
+      'Descarga BlackCatPOS hoy y empieza a administrar tu negocio de forma simple, gratuita y sin conexión a internet.': 'Download BlackCatPOS today and manage your business simply, for free, and offline.',
+      'Términos de Uso': 'Terms of Use', 'Política de Privacidad': 'Privacy Policy',
+      'Todos los derechos reservados.': 'All rights reserved.'
+    };
+
+    function setLanguage(language) {
+      const english = language === 'en';
+      document.documentElement.lang = language;
+      document.querySelectorAll('.language-toggle').forEach(button => {
+        button.textContent = english ? 'ES' : (button.closest('#mobile-menu') ? 'English' : 'EN');
+      });
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        const original = node.dataset.spanish || node.nodeValue;
+        if (!node.dataset.spanish) node.dataset.spanish = original;
+        const key = original.trim().replace(/\\s+/g, ' ');
+        if (english && translations[key]) node.nodeValue = original.replace(key, translations[key]);
+        else if (!english) node.nodeValue = original;
+      }
+      document.title = english ? 'BlackCatPOS — All-in-One Business Management System' : 'BlackCatPOS — Sistema de Control Todo en Uno para Pequeños Negocios';
+      localStorage.setItem('blackcatpos-language', language);
+    }
+
+    document.querySelectorAll('.language-toggle').forEach(button => button.addEventListener('click', () => {
+      setLanguage(document.documentElement.lang === 'es' ? 'en' : 'es');
+    }));
+    setLanguage(localStorage.getItem('blackcatpos-language') || 'es');
+
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 

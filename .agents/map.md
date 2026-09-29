@@ -75,6 +75,7 @@ CTA final → redirección a itch.io
 
 ## Componentes UI
 - Navbar fixed con glass-morphism
+- Selector de idioma español/inglés en navbar; preferencia guardada en localStorage
 - Menú hamburguesa (mobile)
 - Logo BlackCatPOS ampliado en navbar, hero y CTA de descarga
 - Dark theme (#0f0f0f background)
