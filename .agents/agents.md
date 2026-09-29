@@ -9,6 +9,7 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 - **Google Fonts Inter** - CDN
 - **Vanilla JS** - Animaciones, menú mobile, scroll effects
 - **Idiomas** - Español/inglés en landing, selector Vanilla JS y preferencia en localStorage
+- **legal-language.js** - Sincroniza preferencia de idioma al visitar las páginas legales
 - **SVG** - Favicon/icon
 
 ## Estructura
@@ -19,6 +20,7 @@ Landing page estática para promocionar BlackCatPOS, un sistema POS de escritori
 ├── terminos-en.html    # Terms of Use in English
 ├── privacidad.html     # Política de Privacidad en español
 ├── privacidad-en.html  # Privacy Policy in English
+├── legal-language.js   # Preferencia de idioma en páginas legales
 ├── style.css           # Vacío (placeholder)
 ├── icon.svg            # Favicon 1080x1080
 ├── version.json        # Versión app desktop

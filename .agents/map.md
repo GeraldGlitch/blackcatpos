@@ -80,6 +80,8 @@ CTA final → redirección a itch.io
 ## Componentes UI
 - Navbar fixed con glass-morphism
 - Selector de idioma español/inglés en navbar; preferencia guardada en localStorage
+- Landing traduce textos visibles, metadatos, etiquetas accesibles, enlaces legales y mensajes de WhatsApp; versión de novedades se traduce al cargar `version.json`
+- Páginas legales fijan idioma al visitarlas, para regresar a landing en mismo idioma
 - Menú hamburguesa (mobile)
 - Logo BlackCatPOS ampliado en navbar, hero y CTA de descarga
 - Dark theme (#0f0f0f background)
