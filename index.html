@@ -919,6 +919,12 @@
         else if (!english) node.nodeValue = original;
       }
       document.title = english ? 'BlackCatPOS — All-in-One Business Management System' : 'BlackCatPOS — Sistema de Control Todo en Uno para Pequeños Negocios';
+      document.querySelectorAll('a[href="terminos.html"], a[href="terminos-en.html"]').forEach(link => {
+        link.href = english ? 'terminos-en.html' : 'terminos.html';
+      });
+      document.querySelectorAll('a[href="privacidad.html"], a[href="privacidad-en.html"]').forEach(link => {
+        link.href = english ? 'privacidad-en.html' : 'privacidad.html';
+      });
       localStorage.setItem('blackcatpos-language', language);
     }
 
