@@ -1,0 +1,43 @@
+# BlackCatPOS
+
+> Sistema de punto de venta (POS) gratuito y todo en uno para pequeños negocios: ventas, gastos, inventario, clientes, proveedores, empleados, reportes, cuentas y configuración en una sola aplicación con base de datos local. Funciona en Windows y Linux, sin internet y sin costos mensuales. Anteriormente conocido como PoopPOS (renombrado en la versión 1.0.9).
+
+Sitio oficial: https://blackcatpos.geraldb1996.com
+
+## Producto
+- [Descarga gratuita en itch.io](https://geraldglitch.itch.io/pooppos): instaladores para Windows y Linux.
+- [Guía de usuario (PDF, v1.1.16, español)](https://blackcatpos.geraldb1996.com/Guia_Usuario_BlackCatPOS.pdf): documentación completa: instalación, configuración inicial, módulos, impresión, impuestos, empleados y más.
+
+## Módulos
+- **Ventas**: procesa ventas en las monedas configuradas, con venta rápida para clientes no registrados.
+- **Gastos**: registra transacciones de gastos con proveedores, con opción de gasto rápido.
+- **Inventario**: agrega productos con categorías gestionables desde el propio módulo.
+- **Clientes**: guarda datos de contacto y seguimiento de gastos por cliente.
+- **Proveedores**: administra proveedores y el gasto acumulado con cada uno.
+- **Empleados**: perfiles con acceso a la app, permisos individuales y log de actividad.
+- **Reportes**: reporte diario completo al seleccionar "Terminar día" en Ventas.
+- **Cuentas**: cuentas financieras con balances en todas las monedas soportadas.
+- **Configuración**: monedas soportadas, moneda principal y logs de actividad.
+
+## Características clave
+- 100% gratuito, sin suscripciones ni límites.
+- Base de datos local: los datos nunca salen del dispositivo del usuario.
+- Multi-moneda con tasas de cambio personalizadas.
+- Login por PIN y control de permisos por empleado.
+
+## Servicios opcionales (de pago)
+- Implementación completa: $200 pago único (instalación, importación de datos y capacitación).
+- Capacitación de personal: $30 por sesión.
+- Importación en lote: $20 a $40 según volumen (migración desde Excel/CSV).
+- Carga manual de datos: $60 a $100 según volumen.
+
+## Legal
+- [Términos de uso (español)](https://blackcatpos.geraldb1996.com/terminos.html)
+- [Política de privacidad (español)](https://blackcatpos.geraldb1996.com/privacidad.html)
+- [Terms of Use (English)](https://blackcatpos.geraldb1996.com/terminos-en.html)
+- [Privacy Policy (English)](https://blackcatpos.geraldb1996.com/privacidad-en.html)
+
+## Contacto
+- WhatsApp: +505 8804 7240 (https://wa.me/50588047240)
+- Desarrollador: GeraldGlitch (https://github.com/GeraldGlitch)
+- Basado en Nicaragua; atención en español e inglés.

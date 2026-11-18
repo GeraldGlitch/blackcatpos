@@ -1,0 +1,7 @@
+# BlackCatPOS — https://blackcatpos.geraldb1996.com
+User-agent: *
+Allow: /
+
+# Los rastreadores de IA (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot,
+# Applebot-Extended) están permitidos por defecto para fines de GEO.
+Sitemap: https://blackcatpos.geraldb1996.com/sitemap.xml

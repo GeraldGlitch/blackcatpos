@@ -4,11 +4,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BlackCatPOS — Sistema de Control Todo en Uno para Pequeños Negocios</title>
+  <title>BlackCatPOS — POS Gratuito para Pequeños Negocios</title>
   <meta name="description"
-    content="BlackCatPOS es un sistema POS gratuito con base de datos local para pequeños negocios. Ventas, gastos, inventario, clientes, proveedores, empleados, reportes, cuentas y configuración en un solo lugar.">
+    content="Sistema POS gratuito para pequeños negocios: ventas, inventario, gastos, clientes y reportes. Base de datos local, sin internet ni mensualidades.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="canonical" href="https://blackcatpos.geraldb1996.com/">
   <meta name="google-site-verification" content="JhV6Joj_dEmSWGM7XyZ64sIZ8MWfN94WWQWxqrbDjDk" />
   <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="preload" as="image" href="images/logos-384.webp" fetchpriority="high">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BlackCatPOS">
+  <meta property="og:url" content="https://blackcatpos.geraldb1996.com/">
+  <meta property="og:title" content="BlackCatPOS — POS Gratuito para Pequeños Negocios">
+  <meta property="og:description"
+    content="Sistema POS gratuito para pequeños negocios: ventas, inventario, gastos, clientes y reportes. Base de datos local, sin internet ni mensualidades.">
+  <meta property="og:image" content="https://blackcatpos.geraldb1996.com/images/main-dashboard.png">
+  <meta property="og:image:width" content="1149">
+  <meta property="og:image:height" content="647">
+  <meta property="og:image:alt" content="BlackCatPOS Dashboard principal">
+  <meta property="og:locale" content="es_NI">
+
+  <!-- X (Twitter) Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BlackCatPOS — POS Gratuito para Pequeños Negocios">
+  <meta name="twitter:description"
+    content="Sistema POS gratuito para pequeños negocios: ventas, inventario, gastos, clientes y reportes. Base de datos local, sin internet ni mensualidades.">
+  <meta name="twitter:image" content="https://blackcatpos.geraldb1996.com/images/main-dashboard.png">
+  <meta name="twitter:image:alt" content="BlackCatPOS Dashboard principal">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -54,8 +80,13 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts: carga asíncrona para no bloquear el render -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <style>
     html {
@@ -244,6 +275,163 @@
       box-shadow: 0 4px 20px -8px rgba(241, 147, 56, 0.1);
     }
   </style>
+
+  <!-- Schema Markup (JSON-LD): identidad de marca, negocio local, producto y FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://blackcatpos.geraldb1996.com/#website",
+        "url": "https://blackcatpos.geraldb1996.com/",
+        "name": "BlackCatPOS",
+        "inLanguage": "es",
+        "publisher": { "@id": "https://blackcatpos.geraldb1996.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://blackcatpos.geraldb1996.com/#organization",
+        "name": "BlackCatPOS",
+        "alternateName": "PoopPOS",
+        "url": "https://blackcatpos.geraldb1996.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://blackcatpos.geraldb1996.com/icon.png",
+          "width": 1254,
+          "height": 1254
+        },
+        "sameAs": [
+          "https://geraldglitch.itch.io/pooppos",
+          "https://github.com/GeraldGlitch",
+          "https://www.youtube.com/watch?v=52_GPI-v_8w"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+505-8804-7240",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish", "English"],
+          "url": "https://wa.me/50588047240"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://blackcatpos.geraldb1996.com/#localbusiness",
+        "name": "BlackCatPOS",
+        "url": "https://blackcatpos.geraldb1996.com/",
+        "image": "https://blackcatpos.geraldb1996.com/images/main-dashboard.png",
+        "logo": "https://blackcatpos.geraldb1996.com/icon.png",
+        "telephone": "+505-8804-7240",
+        "priceRange": "Gratis - $200",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "NI"
+        },
+        "areaServed": { "@type": "Country", "name": "Nicaragua" },
+        "sameAs": [
+          "https://geraldglitch.itch.io/pooppos",
+          "https://github.com/GeraldGlitch"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://blackcatpos.geraldb1996.com/#software",
+        "name": "BlackCatPOS",
+        "operatingSystem": "Windows, Linux",
+        "applicationCategory": "BusinessApplication",
+        "softwareVersion": "1.1.16",
+        "url": "https://blackcatpos.geraldb1996.com/",
+        "downloadUrl": "https://geraldglitch.itch.io/pooppos",
+        "description": "Sistema POS gratuito para pequeños negocios: ventas, inventario, gastos, clientes y reportes. Base de datos local, sin internet ni mensualidades.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": { "@id": "https://blackcatpos.geraldb1996.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://blackcatpos.geraldb1996.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿BlackCatPOS es realmente gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. BlackCatPOS es 100% gratuito, sin suscripciones, sin límites de uso y sin costos ocultos. Solo los servicios opcionales de instalación y capacitación tienen precio, y contratarlos es totalmente opcional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito conexión a internet para usar BlackCatPOS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La aplicación funciona sin internet: toda la información se guarda en una base de datos local en tu computadora. Solo necesitas conexión para descargar el instalador."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se guardan los datos de mi negocio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En tu propio dispositivo. BlackCatPOS usa una base de datos local, así que tus ventas, inventario y clientes nunca salen de tu computadora ni dependen de servidores externos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué sistemas operativos funciona?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BlackCatPOS está disponible para Windows y Linux. Puedes descargarlo gratis desde la página del proyecto en itch.io."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo trabajar con varias monedas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Configuras las monedas que acepta tu negocio, eliges la moneda principal y defines tus propias tasas de cambio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Ofrecen ayuda para instalarlo o migrar mis datos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Ofrecemos implementación completa, capacitación de personal, importación de datos en lote y carga manual de datos. Escríbenos por WhatsApp al +505 8804 7240 para una cotización."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Analytics: cuando tengas tu ID de Google Analytics 4, descomenta este bloque y reemplaza G-XXXXXXXXXX
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Píxel de Meta (Facebook): cuando tengas tu ID, descomenta este bloque y reemplaza FACEBOOK_PIXEL_ID
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'FACEBOOK_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  -->
 </head>
 
 <body class="antialiased">
@@ -254,7 +442,7 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="#" class="flex items-center gap-3 group" aria-label="BlackCatPOS Inicio">
-          <img src="images/logos.png" alt="BlackCatPOS logo"
+          <img src="images/logos-384.webp" alt="BlackCatPOS logo" width="48" height="48" decoding="async"
             class="w-12 h-12 rounded-full object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-md">
           <span class="text-xl font-bold tracking-tight">BlackCat<span class="gradient-text">POS</span></span>
         </a>
@@ -327,7 +515,8 @@
         <div class="flex justify-center mb-8">
           <div class="relative">
             <div class="absolute inset-0 rounded-full bg-poop-500/10 blur-3xl pulse-ring"></div>
-            <img src="images/logos.png" alt="BlackCatPOS mascota"
+            <img src="images/logos-384.webp" alt="BlackCatPOS mascota" width="192" height="192" loading="eager"
+              fetchpriority="high" decoding="async"
               class="w-40 h-40 sm:w-48 sm:h-48 relative float-animation drop-shadow-2xl">
           </div>
         </div>
@@ -423,8 +612,8 @@
       <!-- Banner -->
       <div class="max-w-5xl mx-auto">
         <div class="rounded-3xl overflow-hidden bg-[#fdf3e3] p-2 sm:p-3 border border-poop-500/20">
-          <img src="images/rebranding.png" alt="Banner de rebranding: PoopPOS pasa a llamarse BlackCatPOS en la versión 1.0.9"
-            class="w-full rounded-2xl" loading="lazy">
+          <img src="images/rebranding.webp" alt="Banner de rebranding: PoopPOS pasa a llamarse BlackCatPOS en la versión 1.0.9"
+            width="1612" height="618" loading="lazy" decoding="async" class="w-full rounded-2xl">
         </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
@@ -542,7 +731,7 @@
         <!-- Ventas -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-yellow-500/10"><img src="images/iconVentas.png" alt="Ventas" class="w-9 h-9"></div>
+            <div class="feature-icon bg-yellow-500/10"><img src="images/iconVentas-72.webp" alt="Ventas" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Ventas</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -556,7 +745,7 @@
         <!-- Gastos -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-red-500/10"><img src="images/iconGastos.png" alt="Gastos" class="w-9 h-9"></div>
+            <div class="feature-icon bg-red-500/10"><img src="images/iconGastos-72.webp" alt="Gastos" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Gastos</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -570,7 +759,7 @@
         <!-- Inventario -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-amber-500/10"><img src="images/iconInventario.png" alt="Inventario" class="w-9 h-9"></div>
+            <div class="feature-icon bg-amber-500/10"><img src="images/iconInventario-72.webp" alt="Inventario" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Inventario</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -584,7 +773,7 @@
         <!-- Clientes -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-blue-500/10"><img src="images/iconClientes.png" alt="Clientes" class="w-9 h-9"></div>
+            <div class="feature-icon bg-blue-500/10"><img src="images/iconClientes-72.webp" alt="Clientes" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Clientes</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -597,7 +786,7 @@
         <!-- Proveedores -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-orange-500/10"><img src="images/iconProveedores.png" alt="Proveedores" class="w-9 h-9"></div>
+            <div class="feature-icon bg-orange-500/10"><img src="images/iconProveedores-72.webp" alt="Proveedores" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Proveedores</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -610,7 +799,7 @@
         <!-- Empleados -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-indigo-500/10"><img src="images/iconEmpleados.png" alt="Empleados" class="w-9 h-9"></div>
+            <div class="feature-icon bg-indigo-500/10"><img src="images/iconEmpleados-72.webp" alt="Empleados" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Empleados</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -624,7 +813,7 @@
         <!-- Reportes -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-teal-500/10"><img src="images/iconReportes.png" alt="Reportes" class="w-9 h-9"></div>
+            <div class="feature-icon bg-teal-500/10"><img src="images/iconReportes-72.webp" alt="Reportes" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Reportes</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -638,7 +827,7 @@
         <!-- Cuentas -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-emerald-500/10"><img src="images/iconCuentas.png" alt="Cuentas" class="w-9 h-9"></div>
+            <div class="feature-icon bg-emerald-500/10"><img src="images/iconCuentas-72.webp" alt="Cuentas" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Cuentas</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -651,7 +840,7 @@
         <!-- Configuración -->
         <div class="feature-card rounded-2xl p-6 group">
           <div class="flex items-start gap-4">
-            <div class="feature-icon bg-gray-500/10"><img src="images/iconConfig.png" alt="Configuración" class="w-9 h-9"></div>
+            <div class="feature-icon bg-gray-500/10"><img src="images/iconConfig-72.webp" alt="Configuración" class="w-9 h-9" width="36" height="36" loading="lazy" decoding="async"></div>
             <div>
               <h3 class="text-base font-semibold mb-1.5 group-hover:text-poop-300 transition-colors">Configuración</h3>
               <p class="text-sm text-dark-400 leading-relaxed">
@@ -760,15 +949,90 @@
       <!-- Video Container -->
       <div class="max-w-4xl mx-auto">
         <div class="screenshot-wrapper rounded-2xl overflow-hidden aspect-video shadow-2xl">
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/52_GPI-v_8w"
-            title="BlackCatPOS Primeros pasos y setup inicial"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
+          <noscript>
+            <style>#video-facade { display: none; }</style>
+          </noscript>
+          <!-- Video con carga diferida: el iframe de YouTube solo se crea al hacer clic -->
+          <div id="video-facade" class="relative w-full h-full cursor-pointer group/video" role="button" tabindex="0"
+            aria-label="Reproducir video: BlackCatPOS Primeros pasos y setup inicial">
+            <img src="https://i.ytimg.com/vi/52_GPI-v_8w/maxresdefault.jpg"
+              onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/52_GPI-v_8w/hqdefault.jpg';"
+              alt="Miniatura del video tutorial de BlackCatPOS" width="1280" height="720" loading="lazy"
+              decoding="async" class="w-full h-full object-cover">
+            <span
+              class="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-poop-500 text-white flex items-center justify-center shadow-lg transition-transform duration-300 group-hover/video:scale-110"
+              aria-hidden="true">
+              <svg class="w-8 h-8 sm:w-10 sm:h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+          </div>
+          <noscript>
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/52_GPI-v_8w"
+              title="BlackCatPOS Primeros pasos y setup inicial" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="py-24 relative" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest uppercase text-poop-400 mb-3 block">Preguntas
+          Frecuentes</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+          Dudas <span class="gradient-text">comunes</span>
+        </h2>
+        <p class="text-dark-300 leading-relaxed">
+          Respuestas rápidas a lo que más nos preguntan sobre BlackCatPOS.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿BlackCatPOS es realmente gratis?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">Sí. BlackCatPOS es 100% gratuito, sin suscripciones, sin
+            límites de uso y sin costos ocultos. Solo los servicios opcionales de instalación y capacitación tienen
+            precio, y contratarlos es totalmente opcional.</p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿Necesito conexión a internet para usar BlackCatPOS?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">No. La aplicación funciona sin internet: toda la información
+            se guarda en una base de datos local en tu computadora. Solo necesitas conexión para descargar el
+            instalador.</p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿Dónde se guardan los datos de mi negocio?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">En tu propio dispositivo. BlackCatPOS usa una base de datos
+            local, así que tus ventas, inventario y clientes nunca salen de tu computadora ni dependen de servidores
+            externos.</p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿En qué sistemas operativos funciona?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">BlackCatPOS está disponible para Windows y Linux. Puedes
+            descargarlo gratis desde la página del proyecto en itch.io.</p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿Puedo trabajar con varias monedas?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">Sí. Configuras las monedas que acepta tu negocio, eliges la
+            moneda principal y defines tus propias tasas de cambio.</p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-6">
+          <h3 class="text-lg font-semibold mb-2">¿Ofrecen ayuda para instalarlo o migrar mis datos?</h3>
+          <p class="text-sm text-dark-400 leading-relaxed">Sí. Ofrecemos implementación completa, capacitación de
+            personal, importación de datos en lote y carga manual de datos. Escríbenos por WhatsApp al +505 8804 7240
+            para una cotización.</p>
         </div>
       </div>
     </div>
@@ -837,7 +1101,7 @@
         <div>
           <div class="screenshot-wrapper rounded-2xl overflow-hidden">
             <img src="images/main-dashboard.png" alt="BlackCatPOS Dashboard principal mostrando los 9 módulos"
-              class="w-full rounded-2xl" loading="lazy">
+              width="1149" height="647" loading="lazy" decoding="async" class="w-full rounded-2xl">
           </div>
           <p class="text-center text-sm text-dark-400 mt-4 font-medium">Dashboard Principal — Acceso rápido a todos los
             módulos</p>
@@ -846,8 +1110,8 @@
         <!-- Login -->
         <div>
           <div class="screenshot-wrapper rounded-2xl overflow-hidden">
-            <img src="images/login.png" alt="BlackCatPOS pantalla de login con PIN" class="w-full rounded-2xl"
-              loading="lazy">
+            <img src="images/login.png" alt="BlackCatPOS pantalla de login con PIN" width="1158" height="664"
+              loading="lazy" decoding="async" class="w-full rounded-2xl">
           </div>
           <p class="text-center text-sm text-dark-400 mt-4 font-medium">Login con PIN — Seguro y rápido para cada
             empleado</p>
@@ -864,7 +1128,8 @@
       <div class="feature-card rounded-3xl p-8 sm:p-12 text-center">
         <!-- Logo small -->
         <div class="flex justify-center mb-6">
-          <img src="images/logos.png" alt="BlackCatPOS" class="w-24 h-24 rounded-xl float-animation">
+          <img src="images/logos-384.webp" alt="BlackCatPOS" width="96" height="96" loading="lazy" decoding="async"
+            class="w-24 h-24 rounded-xl float-animation">
         </div>
 
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
@@ -892,10 +1157,30 @@
   <!-- ==================== FOOTER ==================== -->
   <footer class="border-t border-white/5 py-12" role="contentinfo">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Contacto y redes -->
+      <div class="flex flex-col items-center gap-5 mb-10 text-center">
+        <p class="text-sm text-dark-300">
+          ¿Dudas? Escríbenos por WhatsApp:
+          <a href="https://wa.me/50588047240" target="_blank" rel="noopener" aria-label="WhatsApp de BlackCatPOS"
+            class="text-poop-400 hover:text-poop-300 font-medium transition-colors">+505 8804 7240</a>
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="https://geraldglitch.itch.io/pooppos" target="_blank" rel="noopener" aria-label="BlackCatPOS en itch.io"
+            class="text-xs text-dark-400 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-1.5">itch.io</a>
+          <a href="https://github.com/GeraldGlitch" target="_blank" rel="noopener" aria-label="BlackCatPOS en GitHub"
+            class="text-xs text-dark-400 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-1.5">GitHub</a>
+          <a href="https://www.youtube.com/watch?v=52_GPI-v_8w" target="_blank" rel="noopener"
+            aria-label="Canal de YouTube de BlackCatPOS"
+            class="text-xs text-dark-400 hover:text-white transition-colors border border-white/10 hover:border-white/20 rounded-full px-4 py-1.5">YouTube</a>
+        </div>
+        <p class="text-xs text-dark-500">Basado en Nicaragua · Atención en español e inglés</p>
+      </div>
+
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         <!-- Logo -->
         <div class="flex items-center gap-3">
-          <img src="images/logos.png" alt="BlackCatPOS" class="w-10 h-10 rounded-lg">
+          <img src="images/logos-384.webp" alt="BlackCatPOS" width="40" height="40" loading="lazy" decoding="async"
+            class="w-10 h-10 rounded-lg">
           <span class="text-sm font-semibold">BlackCat<span class="gradient-text">POS</span></span>
         </div>
 
@@ -910,6 +1195,7 @@
           <a href="#modules" class="text-xs text-dark-400 hover:text-white transition-colors">Módulos</a>
           <a href="#services" class="text-xs text-dark-400 hover:text-white transition-colors">Servicios</a>
           <a href="#tutorial" class="text-xs text-dark-400 hover:text-white transition-colors">Tutorial</a>
+          <a href="#faq" class="text-xs text-dark-400 hover:text-white transition-colors">Preguntas Frecuentes</a>
           <a href="#guia" class="text-xs text-dark-400 hover:text-white transition-colors">Guía de Usuario</a>
           <a href="terminos.html" class="text-xs text-dark-400 hover:text-white transition-colors">Términos de Uso</a>
           <a href="privacidad.html" class="text-xs text-dark-400 hover:text-white transition-colors">Política de Privacidad</a>
@@ -980,7 +1266,32 @@
       'Dashboard Principal — Acceso rápido a todos los módulos': 'Main Dashboard — Quick access to every module',
       'Login con PIN — Seguro y rápido para cada empleado': 'PIN Login — Secure and fast for every employee',
       'Disponible para Windows & Linux en itch.io': 'Available for Windows & Linux on itch.io',
-      '© 2026 BlackCatPOS by GeraldGlitch Todos los derechos reservados.': '© 2026 BlackCatPOS by GeraldGlitch. All rights reserved.'
+      '© 2026 BlackCatPOS by GeraldGlitch Todos los derechos reservados.': '© 2026 BlackCatPOS by GeraldGlitch. All rights reserved.',
+      // FAQ
+      'Preguntas Frecuentes': 'FAQ',
+      'Dudas': 'Common', 'comunes': 'questions',
+      'Respuestas rápidas a lo que más nos preguntan sobre BlackCatPOS.': 'Quick answers to the most common questions about BlackCatPOS.',
+      '¿BlackCatPOS es realmente gratis?': 'Is BlackCatPOS really free?',
+      'Sí. BlackCatPOS es 100% gratuito, sin suscripciones, sin límites de uso y sin costos ocultos. Solo los servicios opcionales de instalación y capacitación tienen precio, y contratarlos es totalmente opcional.': 'Yes. BlackCatPOS is 100% free, with no subscriptions, no usage limits, and no hidden fees. Only the optional installation and training services have a price, and hiring them is completely optional.',
+      '¿Necesito conexión a internet para usar BlackCatPOS?': 'Do I need an internet connection to use BlackCatPOS?',
+      'No. La aplicación funciona sin internet: toda la información se guarda en una base de datos local en tu computadora. Solo necesitas conexión para descargar el instalador.': 'No. The app works offline: all information is stored in a local database on your computer. You only need a connection to download the installer.',
+      '¿Dónde se guardan los datos de mi negocio?': 'Where is my business data stored?',
+      'En tu propio dispositivo. BlackCatPOS usa una base de datos local, así que tus ventas, inventario y clientes nunca salen de tu computadora ni dependen de servidores externos.': 'On your own device. BlackCatPOS uses a local database, so your sales, inventory, and customers never leave your computer or depend on external servers.',
+      '¿En qué sistemas operativos funciona?': 'Which operating systems does it run on?',
+      'BlackCatPOS está disponible para Windows y Linux. Puedes descargarlo gratis desde la página del proyecto en itch.io.': 'BlackCatPOS is available for Windows and Linux. You can download it for free from the project page on itch.io.',
+      '¿Puedo trabajar con varias monedas?': 'Can I work with multiple currencies?',
+      'Sí. Configuras las monedas que acepta tu negocio, eliges la moneda principal y defines tus propias tasas de cambio.': 'Yes. You set the currencies your business accepts, choose the primary one, and define your own exchange rates.',
+      '¿Ofrecen ayuda para instalarlo o migrar mis datos?': 'Do you offer help with setup or data migration?',
+      'Sí. Ofrecemos implementación completa, capacitación de personal, importación de datos en lote y carga manual de datos. Escríbenos por WhatsApp al +505 8804 7240 para una cotización.': 'Yes. We offer full implementation, staff training, bulk data import, and manual data entry. Message us on WhatsApp at +505 8804 7240 for a quote.',
+      // Contacto en footer
+      '¿Dudas? Escríbenos por WhatsApp:': 'Questions? Message us on WhatsApp:',
+      'Basado en Nicaragua · Atención en español e inglés': 'Based in Nicaragua · Support in English and Spanish',
+      // Sección Guía (claves que faltaban)
+      'Guía de Usuario': 'User Guide',
+      'Documentación': 'Documentation',
+      'Guía de usuario -': 'User guide -',
+      'La documentación completa de BlackCatPOS en un solo PDF: instalación, configuración inicial, módulos, impresión, impuestos, empleados y más. Consúltala online o descárgala para tenerla siempre a mano.': 'The complete BlackCatPOS documentation in a single PDF: installation, initial setup, modules, printing, taxes, employees, and more. Read it online or download it to keep it handy.',
+      'PDF · 4.9 MB · Español': 'PDF · 4.9 MB · Spanish'
     });
 
     const translatedAttributes = {
@@ -990,6 +1301,12 @@
       'BlackCatPOS Primeros pasos y setup inicial': 'BlackCatPOS getting started and initial setup',
       'BlackCatPOS Dashboard principal mostrando los 9 módulos': 'BlackCatPOS main dashboard showing all 9 modules',
       'BlackCatPOS pantalla de login con PIN': 'BlackCatPOS PIN login screen',
+      'Miniatura del video tutorial de BlackCatPOS': 'BlackCatPOS video tutorial thumbnail',
+      'Reproducir video: BlackCatPOS Primeros pasos y setup inicial': 'Play video: BlackCatPOS getting started and initial setup',
+      'BlackCatPOS en itch.io': 'BlackCatPOS on itch.io',
+      'BlackCatPOS en GitHub': 'BlackCatPOS on GitHub',
+      'Canal de YouTube de BlackCatPOS': 'BlackCatPOS YouTube channel',
+      'WhatsApp de BlackCatPOS': 'BlackCatPOS WhatsApp',
       ...Object.fromEntries(['Ventas', 'Gastos', 'Inventario', 'Clientes', 'Proveedores', 'Empleados', 'Reportes', 'Cuentas', 'Configuración'].map(key => [key, translations[key]]))
     };
     const originalTexts = new WeakMap();
@@ -1043,10 +1360,10 @@
           : `Hola, quiero información de BlackCatPOS - ${serviceNames[index]}`;
         link.href = `https://wa.me/50588047240?text=${encodeURIComponent(message)}`;
       });
-      document.title = english ? 'BlackCatPOS — All-in-One Business Management System' : 'BlackCatPOS — Sistema de Control Todo en Uno para Pequeños Negocios';
+      document.title = english ? 'BlackCatPOS — Free POS for Small Businesses' : 'BlackCatPOS — POS Gratuito para Pequeños Negocios';
       document.querySelector('meta[name="description"]').content = english
-        ? 'BlackCatPOS is a free point-of-sale system with a local database for small businesses. Manage sales, expenses, inventory, customers, suppliers, employees, reports, accounts, and settings in one place.'
-        : 'BlackCatPOS es un sistema POS gratuito con base de datos local para pequeños negocios. Ventas, gastos, inventario, clientes, proveedores, empleados, reportes, cuentas y configuración en un solo lugar.';
+        ? 'Free POS system for small businesses: sales, inventory, expenses, customers and reports. Local database, no internet, no monthly fees.'
+        : 'Sistema POS gratuito para pequeños negocios: ventas, inventario, gastos, clientes y reportes. Base de datos local, sin internet ni mensualidades.';
       document.querySelectorAll('a[href="terminos.html"], a[href="terminos-en.html"]').forEach(link => {
         link.href = english ? 'terminos-en.html' : 'terminos.html';
       });
@@ -1080,6 +1397,31 @@
         menuBtn.setAttribute('aria-expanded', 'false');
       });
     });
+
+    // Video facade: crea el iframe de YouTube solo al primer clic (evita bloquear el render)
+    const videoFacade = document.getElementById('video-facade');
+
+    function loadVideo() {
+      if (!videoFacade) return;
+      const iframe = document.createElement('iframe');
+      iframe.className = 'w-full h-full';
+      iframe.src = 'https://www.youtube.com/embed/52_GPI-v_8w?autoplay=1&rel=0';
+      iframe.title = 'BlackCatPOS Primeros pasos y setup inicial';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allowFullscreen = true;
+      videoFacade.replaceWith(iframe);
+    }
+
+    if (videoFacade) {
+      videoFacade.addEventListener('click', loadVideo);
+      videoFacade.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          loadVideo();
+        }
+      });
+    }
 
     // Navbar background on scroll
     const navbar = document.getElementById('navbar');
